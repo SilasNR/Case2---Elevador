@@ -1,0 +1,17 @@
+#space{
+    float: left;
+    width: 1200px;
+    min-height:  calc(100vh - 4px);
+    border: 1px white solid;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#vazio{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(145, 241, 145);
+}
