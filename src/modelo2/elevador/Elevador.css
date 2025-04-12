@@ -1,18 +1,45 @@
 #space{
     float: left;
-    width: 1200px;
+    width:70%;
     min-height:  calc(100vh - 4px);
     border: 1px white solid;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: end;
+    justify-content: space-around;
 }
 
-#btnDoor{
+#titulo{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 160px;
+}
+
+
+#floor{
+    background-color: red;
+    width: 100%;
+    height: 160px;
+}
+
+#btn{
     background-color: red;
     width: 100px;
     height: 100px;
     float: right;
+    border: 3px gray solid;
+    margin: 20px;
+}
+#btn:hover{
+    background-color: brown;
+}
+
+#controller{
+    padding-top: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

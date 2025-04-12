@@ -1,6 +1,6 @@
 import './App.css'
-import Modelo1 from './modelo1/elevador/Elevador'
-import Modelo2 from './modelo2/elevador/Elevador'
+import Modelo1 from './modelo1/elevador/Elevador.js'
+import Modelo2 from './modelo2/elevador/Elevador.tsx'
 
 function App() {
 
