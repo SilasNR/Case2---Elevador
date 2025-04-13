@@ -3,13 +3,13 @@ import "./Cabin.css"
 import { useState } from "react";
 
 function Elevador() {
-  let esperaBasica = 4000;
-  let esperaTudo = 12000;
+  let esperaBasica = 2000;
+  let esperaTudo = 2000;
 
-  let andar3 = 143;
-  let andar2 = 300;
-  let andar1 = 464;
-  let andar0 = 621;
+  let andar3 = 6;
+  let andar2 = 167;
+  let andar1 = 325;
+  let andar0 = 488;
 
   function resolveAfter2Seconds(x: number) {
     return new Promise((resolve) => {
@@ -141,20 +141,19 @@ function Elevador() {
 
   return (
     <>
-    <div id="titulo">Projeto Elevador</div>
+      <div id="titulo">Projeto Elevador</div>
       <div id="space">
         <div id="predio">
-          <div id="elevador"></div>
           <div>
-          <div id="f3" className="floor"></div>
-          <div id="f2" className="floor"></div>
-          <div id="f1" className="floor"></div>
-          <div id="T" className="floor"></div>
+            <div id="f3" className="floor"></div>
+            <div id="f2" className="floor"></div>
+            <div id="f1" className="floor"></div>
+            <div id="T" className="floor"></div>
           </div>
-        </div>
-        <div id="cabin" style={{ top: positionY }}>
-          <div id="door" style={{ width: p }}>
+          <div id="cabin" style={{ top: positionY }}>
+            <div id="door" style={{ width: p }}>
 
+            </div>
           </div>
         </div>
         <div id="chao"></div>
