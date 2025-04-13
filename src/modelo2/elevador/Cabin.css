@@ -15,6 +15,6 @@
 #door{
     width: 50px;
     height: 100%;
-    background-color:white;
+    background-color:rgb(229, 255, 0);
     transition: 2s;
 }
