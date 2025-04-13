@@ -3,8 +3,8 @@ import "./Cabin.css"
 import { useState } from "react";
 
 function Elevador() {
-  let esperaBasica = 2000;
-  let esperaTudo = 2000;
+  let esperaBasica = 4000;
+  let esperaTudo = 12000;
 
   let andar3 = 6;
   let andar2 = 167;
