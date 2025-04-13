@@ -6,6 +6,11 @@ function Elevador() {
   let esperaBasica = 4000;
   let esperaTudo = 12000;
 
+  let andar3 = 143;
+  let andar2 = 300;
+  let andar1 = 464;
+  let andar0 = 621;
+
   function resolveAfter2Seconds(x: number) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -16,7 +21,7 @@ function Elevador() {
 
   const [operation, setOperation] = useState(true);
   const [currentFloor, setCurrentFloor] = useState(0);
-  const [positionY, setPositionY] = useState(654);
+  const [positionY, setPositionY] = useState(andar0);
 
   const [porta, setPorta] = useState(true);
   const [p, setP] = useState(0);
@@ -26,7 +31,7 @@ function Elevador() {
       case 0:
         console.log("case 0 - " + atual);
         if (atual != currentFloor) {
-          setPositionY(654);
+          setPositionY(andar0);
           console.log("espera depois de mudar Y");
           await resolveAfter2Seconds(esperaBasica);
           abrirPorta();
@@ -38,7 +43,7 @@ function Elevador() {
       case 1:
         console.log("case - " + atual);
         if (atual != currentFloor) {
-          setPositionY(494);
+          setPositionY(andar1);
           console.log("espera depois de mudar Y");
           await resolveAfter2Seconds(esperaBasica);
           abrirPorta();
@@ -50,7 +55,7 @@ function Elevador() {
       case 2:
         console.log("case - " + atual);
         if (atual != currentFloor) {
-          setPositionY(334);
+          setPositionY(andar2);
           console.log("espera depois de mudar Y");
           await resolveAfter2Seconds(esperaBasica);
           abrirPorta();
@@ -62,7 +67,7 @@ function Elevador() {
       case 3:
         console.log("case - " + atual);
         if (atual != currentFloor) {
-          setPositionY(174);
+          setPositionY(andar3);
           console.log("espera depois de mudar Y");
           await resolveAfter2Seconds(esperaBasica);
           abrirPorta();
@@ -136,17 +141,23 @@ function Elevador() {
 
   return (
     <>
+    <div id="titulo">Projeto Elevador</div>
       <div id="space">
-        <div id="titulo">Projeto Elevador</div>
-        <div id="floor" >3</div>
-        <div id="floor" >2</div>
-        <div id="floor" >1</div>
-        <div id="floor" >T</div>
+        <div id="predio">
+          <div id="elevador"></div>
+          <div>
+          <div id="f3" className="floor"></div>
+          <div id="f2" className="floor"></div>
+          <div id="f1" className="floor"></div>
+          <div id="T" className="floor"></div>
+          </div>
+        </div>
         <div id="cabin" style={{ top: positionY }}>
           <div id="door" style={{ width: p }}>
 
           </div>
         </div>
+        <div id="chao"></div>
       </div>
       <div id="controller">
         <div id="btn" onClick={() => { changePosition(3) }}><h2>3</h2></div>
