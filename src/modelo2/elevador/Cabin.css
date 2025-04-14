@@ -9,8 +9,7 @@
     justify-content: end;
     transition: 2s;
     z-index: -1;
-    margin-left: 31px;
-    
+    left: 31px;
 }
 
 #door{

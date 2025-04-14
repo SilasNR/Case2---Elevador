@@ -144,16 +144,17 @@ function Elevador() {
       <div id="tudo">
         <div id="space">
           <div id="predio">
-            <div>
               <div id="cabin" style={{ top: positionY }}>
                 <div id="door" style={{ width: p }}></div>
               </div>
+            <div>
               <div id="f3" className="floor"></div>
               <div id="f2" className="floor"></div>
               <div id="f1" className="floor"></div>
               <div id="T" className="floor"></div>
             </div>
           </div>
+          <div id="chao"></div>
         </div>
         <div id="controller">
           <div id="btn" onClick={() => { changePosition(3) }}><h2>3</h2></div>
