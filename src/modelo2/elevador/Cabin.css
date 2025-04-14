@@ -1,15 +1,16 @@
 #cabin{
     background-color: gray;
-    width: 150px;
-    height: 150px;
+    width: 105px;
+    height: 95px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     transition: 2s;
-    z-index: 1;
-    margin-left: 10px;
+    z-index: -1;
+    margin-left: 31px;
+    
 }
 
 #door{

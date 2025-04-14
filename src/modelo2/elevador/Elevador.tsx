@@ -6,10 +6,10 @@ function Elevador() {
   let esperaBasica = 4000;
   let esperaTudo = 12000;
 
-  let andar3 = 6;
-  let andar2 = 167;
-  let andar1 = 325;
-  let andar0 = 488;
+  let andar3 = 132;
+  let andar2 = 291;
+  let andar1 = 451;
+  let andar0 = 611;
 
   function resolveAfter2Seconds(x: number) {
     return new Promise((resolve) => {
@@ -23,8 +23,8 @@ function Elevador() {
   const [currentFloor, setCurrentFloor] = useState(0);
   const [positionY, setPositionY] = useState(andar0);
 
-  const [porta, setPorta] = useState(true);
-  const [p, setP] = useState(0);
+  const [porta, setPorta] = useState(false);
+  const [p, setP] = useState(100);
 
   async function mudarAdar(atual: number) {
     switch (atual) {
@@ -136,35 +136,33 @@ function Elevador() {
     console.log("abriu");
     setPorta(false);
     setOperation(true);
-    fecharPorta();
   }
 
   return (
     <>
       <div id="titulo">Projeto Elevador</div>
-      <div id="space">
-        <div id="predio">
-          <div>
-            <div id="f3" className="floor"></div>
-            <div id="f2" className="floor"></div>
-            <div id="f1" className="floor"></div>
-            <div id="T" className="floor"></div>
-          </div>
-          <div id="cabin" style={{ top: positionY }}>
-            <div id="door" style={{ width: p }}>
-
+      <div id="tudo">
+        <div id="space">
+          <div id="predio">
+            <div>
+              <div id="cabin" style={{ top: positionY }}>
+                <div id="door" style={{ width: p }}></div>
+              </div>
+              <div id="f3" className="floor"></div>
+              <div id="f2" className="floor"></div>
+              <div id="f1" className="floor"></div>
+              <div id="T" className="floor"></div>
             </div>
           </div>
         </div>
-        <div id="chao"></div>
-      </div>
-      <div id="controller">
-        <div id="btn" onClick={() => { changePosition(3) }}><h2>3</h2></div>
-        <div id="btn" onClick={() => { changePosition(2) }}><h2>2</h2></div>
-        <div id="btn" onClick={() => { changePosition(1) }}><h2>1</h2></div>
-        <div id="btn" onClick={() => { changePosition(0) }}><h2>T</h2></div>
-        <div id="btn" onClick={() => { abrirPorta() }}>abrir</div>
-        <div id="btn" onClick={() => { fecharPorta() }}>fechar</div>
+        <div id="controller">
+          <div id="btn" onClick={() => { changePosition(3) }}><h2>3</h2></div>
+          <div id="btn" onClick={() => { changePosition(2) }}><h2>2</h2></div>
+          <div id="btn" onClick={() => { changePosition(1) }}><h2>1</h2></div>
+          <div id="btn" onClick={() => { changePosition(0) }}><h2>T</h2></div>
+          <div id="btn" onClick={() => { abrirPorta() }}><h2>{`<|>`}</h2></div>
+          <div id="btn" onClick={() => { fecharPorta() }}><h2>{`>|<`}</h2></div>
+        </div>
       </div>
     </>
   )

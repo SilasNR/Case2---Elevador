@@ -21,65 +21,63 @@
     border: 5px solid black ;
     width: 500px;
     height: 150px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 #f3{
-    background-image: url("../../../public/1-removebg-preview.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url("../../../public/1.png");
 }
 #f2{
-    background-image: url("../../../public/2-removebg-preview.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url("../../../public/2.png");
 }
 #f1{
-    background-image: url("../../../public/2-removebg-preview.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url("../../../public/2.png");
 }
 #T{
-    background-image: url("../../../public/4-removebg-preview.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url("../../../public/3.png");
 }
 
 #btn{
-    background-color: red;
+    background-color:gray;
     width: 100px;
     height: 100px;
     float: right;
-    border: 3px gray solid;
+    border: 3px rgb(241, 241, 241) solid;
     margin: 20px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
 }
 #btn:hover{
-    background-color: brown;
+    background-color: rgb(95, 95, 95);
 }
 
 #controller{
     padding-top: 200px;
-    height: 100%;
+    min-height:  calc(100vh - 220px);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgb(207, 207, 207);
 }
 
 
 #predio{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(51, 44, 44);
     border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
+    /*display: flex;
+    /*margin-bottom: 40px;*/
     z-index: 1;
     padding: 10px;
+    background-image: url("../../../public/7.png");
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
 }
 
 #chao{
     position: absolute;
-    height: 160px;
-    width: 70%;
     z-index: 0;
     margin-bottom: -10px;
 }
