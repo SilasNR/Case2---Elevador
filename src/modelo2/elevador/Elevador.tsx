@@ -39,6 +39,8 @@ function Elevador() {
         }
         setCurrentFloor(atual)
         setOperation(true)
+        await resolveAfter2Seconds(esperaBasica);
+        fecharPort();
 
         break;
       case 1:
@@ -51,6 +53,8 @@ function Elevador() {
         }
         setCurrentFloor(atual)
         setOperation(true)
+        await resolveAfter2Seconds(esperaBasica);
+        fecharPort();
 
         break;
       case 2:
@@ -63,6 +67,8 @@ function Elevador() {
         }
         setCurrentFloor(atual)
         setOperation(true)
+        await resolveAfter2Seconds(esperaBasica);
+        fecharPort();
 
         break;
       case 3:
@@ -75,6 +81,8 @@ function Elevador() {
         }
         setCurrentFloor(atual)
         setOperation(true)
+        await resolveAfter2Seconds(esperaBasica);
+        fecharPort();
 
         break;
 
@@ -99,7 +107,7 @@ function Elevador() {
           //   } else { console.log("espera antes de subir quando for igual ao andar atual"); await resolveAfter2Seconds(esperaBasica); }
           //   i++;
           // }
-
+          await resolveAfter2Seconds(esperaBasica);
 
         } else if (selecionado < currentFloor) {
           console.log("descendo");
