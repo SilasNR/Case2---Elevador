@@ -3,8 +3,7 @@ import Cabin from '../Cabine/Cabine'
 
 function Elevador() {
 
-    return (
-      <>
+
         <div id="space">
           <Cabin></Cabin>
           <div id="vazio">
